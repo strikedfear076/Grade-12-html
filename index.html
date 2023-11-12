@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Chatbot</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <!-- <script src="response.js" defer></script> -->
+        <script src="index.js" defer></script>
+    </head>
+       
+    
+    <body>
+        <div id="chatbotContainer">
+        <button class="chatbot-toggler">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="chatbot">
+            <header>
+                <h2>Chatbot</h2>
+                <span class="material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hi there <br> How can I help you today?</p>
+                </li> 
+               
+            </ul>
+            <!-- <div class="chat-input">
+                <select id="chatOptions">
+                  <option value="" selected>Select an option</option>
+                  <option value="hello">Hello</option>
+                  <option value="hey">Hey</option>
+                  <option value="today">Today</option>
+                  <option value="time">Time</option>
+                </select>
+                <textarea id="chatInput" rows="1" placeholder="Select an option or type your message..."></textarea>
+                <button id="sendChatBtn" class="material-symbols-outlined">smart_toy</button>
+            </div> -->
+            <div class="chat-input">
+                <!-- <input type="text" placeholder="Enter a message..." required></input> -->
+                <textarea id= "input" placeholder="Select or type..." required></textarea>
+                <div class="suggestions"></div>
+                <span id="btn" class="material-symbols-outlined">send</span>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
