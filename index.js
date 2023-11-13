@@ -17,9 +17,28 @@ const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
 const suggestionContainer = document.querySelector(".suggestions");
 const chatbotToggler = document.querySelector(".chatbot-toggler");
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menu = document.querySelector(".menu-list");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
 
 let userMessage;
 const inputInitHeight = chatInput.scrollHeight;
+
+menuBtn.onclick = () => {
+  menu.classList.add("active");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabledScroll");
+};
+cancelBtn.onclick = () => {
+  menu.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  body.classList.remove("disabledScroll");
+};
+window.onscroll = () => {
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+};
 
 const createChatLi = (message, className) => {
   const chatLi = document.createElement("li");
@@ -33,6 +52,11 @@ const createChatLi = (message, className) => {
 };
 
 const responseObj = {
+  "hey" : () => "Hey! What's up!",
+  "hi" : () => "Hello there!",
+  "hello" : () => "Hi there!",
+  "what's the time?" : () => new Date().toLocaleTimeString(),
+  "what's the date today?" : () => new Date().toDateString(),
   "what are the common signs of mental health issues?" : () => "Pay attention to changes in your mood, behavior, and daily functioning. If you notice persistent changes, consider seeking support from friends, family, or a mental health professional.",
   "how can i manage stress and anxiety in my daily life?": () => "Incorporate stress-reducing practices into your daily routine, such as regular exercise, mindfulness meditation, and setting realistic goals. Consider talking to someone you trust about your stressors.",
   "what are effective self-care strategies for promoting mental well-being?": () => "Prioritize self-care by ensuring you get enough sleep, eat healthily, engage in activities you enjoy, and set boundaries to avoid burnout. Take time for yourself without feeling guilty.",
