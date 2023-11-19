@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Chatbot</title>
-        <link rel="stylesheet" href="index.css">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-        <script src="index.js" defer></script>
-    </head>
-       
-    
-    <body>
-        <nav class="navbar">
-            <div class="content">
-                <div class="logo"><a href="#">WebchatAid</a></div>
-                <ul class="menu-list">
-                    <div class="icon cancel-btn">
-                        <i class="fas fa-times"></i>
-                    </div>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="hotlines.html">Hotlines</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="icon menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </nav>
 
-        <div class="banner"></div>
-            <div class="about">
-                <div class="content">
-                    <div class="title">Responsive navigation bar</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<head>
+    <meta charset="utf-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="index.js" defer></script>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">WebchatAid</a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
                 </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="hotlines.html">Hotlines</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-        <div id="chatbotContainer">
+        </div>
+    </nav>
+
+    <!-- Inserted Homepage Content -->
+    <div class="banner"></div>
+    <div class="about">
+        <div class="content">
+            <div class="title">Welcome to WebchatAid</div>
+            <p><strong>Your Mental Wellness Hub,</strong></p>
+            <p>At WebchatAid, we understand the challenges students face in today's fast-paced world. We're here to support your mental well-being throughout your academic journey.</p>
+            <p><strong>Our Mission:</strong> Empowering Students for a Balanced Life</p>
+            <p><strong>Who We Are:</strong> WebchatAid is a chat support platform committed to promoting mental health awareness, resilience, and self-care strategies among students. Our team comprises mental health professionals, educators, and peers passionate about supporting your mental wellness.</p>
+            <p><strong>Our Commitment</strong></p>
+            <p>Your privacy and confidentiality are paramount. All interactions within our platform are secure and confidential. Join us in prioritizing mental wellness on your academic journey. Together, let's foster a supportive environment for mental health conversations among students. Remember, you're not alone. WebchatAid is here to support you every step of the way!</p>
+            <!-- Include additional content as needed -->
+        </div>
+    </div>
+    <!-- End of Inserted Homepage Content -->
+
+    <div id="chatbotContainer">
         <button class="chatbot-toggler">
             <span class="material-symbols-outlined">mode_comment</span>
             <span class="material-symbols-outlined">close</span>
@@ -52,15 +61,16 @@
                 <li class="chat incoming">
                     <span class="material-symbols-outlined">smart_toy</span>
                     <p>Hi there <br> How can I help you today?</p>
-                </li> 
-               
+                </li>
+
             </ul>
             <div class="chat-input">
-                <textarea id= "input" placeholder="Select or type..." required></textarea>
+                <textarea id="input" placeholder="Please select from these predetermined responses..." required></textarea>
                 <div class="suggestions"></div>
                 <span id="btn" class="material-symbols-outlined">send</span>
             </div>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
