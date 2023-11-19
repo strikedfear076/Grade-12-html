@@ -143,7 +143,7 @@ const setScrollPosition = () => {
 };
 
 const getSuggestions = (input) => {
-  const allSuggestions = ["What are the common signs of mental health issues?", "how can I manage stress and anxiety in my daily life?", "what are effective self-care strategies for promoting mental well-being?", "what are the potential benefits of seeking professional help for mental health concerns?", "what are some warning signs that I should seek professional help for my mental health?", "how can I build resilience to better cope with life's challenges?", "If I'm seeking for professional health are there any hotlines?"];
+  const allSuggestions = ["What are the common signs of mental health issues?", "how can I manage stress and anxiety in my daily life?", "what are effective self-care strategies for promoting mental well-being?", "what are the potential benefits of seeking professional help for mental health concerns?", "what are some warning signs that I should seek professional help for my mental health?", "how can I build resilience to better cope with life's challenges?"];
   return allSuggestions.filter((suggestion) =>
     suggestion.toLowerCase().includes(input)
   );
