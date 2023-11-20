@@ -63,8 +63,8 @@ const responseObj = {
   "what are the potential benefits of seeking professional help for mental health concerns?": () => "If you're struggling with your mental health, don't hesitate to reach out to a mental health professional. They can offer guidance, support, and evidence-based interventions tailored to your needs.",
   "what are some warning signs that i should seek professional help for my mental health?" : () => "If you experience persistent symptoms like sadness, changes in sleep or appetite, difficulty concentrating, or thoughts of self-harm, seek professional help promptly. Early intervention is crucial for effective support.",
   "how can i build resilience to better cope with life's challenges?" : () => "Cultivate a positive mindset, develop problem-solving skills, and seek support during challenging times. Focus on personal growth and the ability to bounce back from adversity.",
-  "fuck you" : () => "... yeah, I'm sorry if you're angry about the advice I give, they are limited, I highly suggest you try calling the hotlines in the "Hotlines tab" of this website.",
-  "help me" : () => "I can only give advices to be able to help you, if what you need is immediate help for your mental health, please go to our hotlines tab, try calling one of the professionals in that tab. Don't give up, you can do this."
+  "fuck you" : () => "... yeah, I'm sorry if you're angry about the advice I give, they are limited, I highly suggest you try calling the hotlines placed un the Hotlines tab of this website.",
+  "help me" : () => "I can only give advices to be able to help you, if what you need is immediate help for your mental health, please go to our hotlines tab, try calling one of the professionals in that tab. Don't give up, you can do this.",
 };
 
 const getChatbotResponse = (userMessage) => {
