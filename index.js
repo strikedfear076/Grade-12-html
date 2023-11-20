@@ -69,7 +69,7 @@ const getChatbotResponse = (userMessage) => {
   const formattedUserMessage = userMessage.trim().toLowerCase();
   return responseObj.hasOwnProperty(formattedUserMessage)
     ? responseObj[formattedUserMessage]()
-    : "Please try something else";
+    : "I'm sorry to hear that, I can only give advices from the predetermined response. You can try again and press the predetermined responses next to the input the moment you press a word key.";
 };
 
 const renderChatMessage = (message, className) => {
