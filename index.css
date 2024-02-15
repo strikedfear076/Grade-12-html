@@ -56,8 +56,17 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: block;
+    border-radius: 10px 10px 10px 0; 
+    position: relative; padding: 10px;
 }
+.banner i { 
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #006400; /* Adjust the color as needed */ 
+    font-size: 20px; 
+    cursor: pointer; 
+}                                                                                                       /* Adjust the font size as needed */ cursor: pointer; }
 .about {
     padding: 40px 0;
 }
