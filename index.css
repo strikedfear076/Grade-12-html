@@ -63,7 +63,7 @@
     position: absolute; 
     top: 50%; left: 50%; 
     transform: translate(-50%, -50%); 
-    color: #006400; /* Adjust the color as needed */ 
+    color: #ffffff; /* Adjust the color as needed */ 
     font-size: 20px; 
     cursor: pointer; 
 }                                                                                                       /* Adjust the font size as needed */ cursor: pointer; }
